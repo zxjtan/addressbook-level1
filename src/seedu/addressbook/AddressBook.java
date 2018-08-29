@@ -1058,8 +1058,7 @@ public class AddressBook {
      * @param phone to be validated
      */
     private static boolean isPersonPhoneValid(String phone) {
-        return phone.matches("\\d+");    // phone nonempty sequence of digits
-        //TODO: implement a more permissive validation
+        return phone.matches("\\+?\\d+"); // phone is nonempty sequence of digits that can start with a +
     }
 
     /**

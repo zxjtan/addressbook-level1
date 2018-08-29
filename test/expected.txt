@@ -1,6 +1,6 @@
 || ===================================================
 || ===================================================
-|| AddessBook Level 1 - Version 1.0
+|| AddressBook Level 1 - Version 1.0
 || Welcome to your Address Book!
 || ===================================================
 || The given file name [ ] is not a valid file name!
@@ -9,7 +9,7 @@
 || ===================================================
 || ===================================================
 || ===================================================
-|| AddessBook Level 1 - Version 1.0
+|| AddressBook Level 1 - Version 1.0
 || Welcome to your Address Book!
 || ===================================================
 || The given file name [directoryThatDoesNotExist/valid.filename] is not a valid file name!
@@ -18,7 +18,7 @@
 || ===================================================
 || ===================================================
 || ===================================================
-|| AddessBook Level 1 - Version 1.0
+|| AddressBook Level 1 - Version 1.0
 || Welcome to your Address Book!
 || ===================================================
 || The given file name [.noFilename] is not a valid file name!
@@ -27,7 +27,7 @@
 || ===================================================
 || ===================================================
 || ===================================================
-|| AddessBook Level 1 - Version 1.0
+|| AddressBook Level 1 - Version 1.0
 || Welcome to your Address Book!
 || ===================================================
 || The given file name [data/notRegularFile.txt] is not a valid file name!
@@ -36,7 +36,7 @@
 || ===================================================
 || ===================================================
 || ===================================================
-|| AddessBook Level 1 - Version 1.0
+|| AddressBook Level 1 - Version 1.0
 || Welcome to your Address Book!
 || ===================================================
 || Enter command: || [Command entered:exit]
@@ -45,7 +45,7 @@
 || ===================================================
 || ===================================================
 || ===================================================
-|| AddessBook Level 1 - Version 1.0
+|| AddressBook Level 1 - Version 1.0
 || Welcome to your Address Book!
 || ===================================================
 || Using default storage file : addressbook.txt
@@ -121,6 +121,13 @@
 || 	Example: add John Doe p/98765432 e/johnd@gmail.com
 || 
 || ===================================================
+|| Enter command: || [Command entered:  add Valid Name p/1+2345 e/valid@e.mail]
+|| Invalid command format: add 
+|| add: Adds a person to the address book.
+|| 	Parameters: NAME p/PHONE_NUMBER e/EMAIL
+|| 	Example: add John Doe p/98765432 e/johnd@gmail.com
+|| 
+|| ===================================================
 || Enter command: || [Command entered:  add Adam Brown p/111111 e/adam@gmail.com]
 || New person added: Adam Brown, Phone: 111111, Email: adam@gmail.com
 || ===================================================
@@ -129,12 +136,12 @@
 || 
 || 1 persons found!
 || ===================================================
-|| Enter command: || [Command entered:  add Betsy Choo p/222222 e/benchoo@nus.edu.sg]
-|| New person added: Betsy Choo, Phone: 222222, Email: benchoo@nus.edu.sg
+|| Enter command: || [Command entered:  add Betsy Choo p/+222222 e/benchoo@nus.edu.sg]
+|| New person added: Betsy Choo, Phone: +222222, Email: benchoo@nus.edu.sg
 || ===================================================
 || Enter command: || [Command entered:  list]
 || 	1. Adam Brown  Phone Number: 111111  Email: adam@gmail.com
-|| 	2. Betsy Choo  Phone Number: 222222  Email: benchoo@nus.edu.sg
+|| 	2. Betsy Choo  Phone Number: +222222  Email: benchoo@nus.edu.sg
 || 
 || 2 persons found!
 || ===================================================
@@ -143,19 +150,19 @@
 || ===================================================
 || Enter command: || [Command entered:  list]
 || 	1. Adam Brown  Phone Number: 111111  Email: adam@gmail.com
-|| 	2. Betsy Choo  Phone Number: 222222  Email: benchoo@nus.edu.sg
+|| 	2. Betsy Choo  Phone Number: +222222  Email: benchoo@nus.edu.sg
 || 	3. Charlie Dickson  Phone Number: 333333  Email: charlie.d@nus.edu.sg
 || 
 || 3 persons found!
 || ===================================================
-|| Enter command: || [Command entered:  add Dickson Ee e/dickson@nus.edu.sg p/444444]
-|| New person added: Dickson Ee, Phone: 444444, Email: dickson@nus.edu.sg
+|| Enter command: || [Command entered:  add Dickson Ee e/dickson@nus.edu.sg p/+444444]
+|| New person added: Dickson Ee, Phone: +444444, Email: dickson@nus.edu.sg
 || ===================================================
 || Enter command: || [Command entered:  list]
 || 	1. Adam Brown  Phone Number: 111111  Email: adam@gmail.com
-|| 	2. Betsy Choo  Phone Number: 222222  Email: benchoo@nus.edu.sg
+|| 	2. Betsy Choo  Phone Number: +222222  Email: benchoo@nus.edu.sg
 || 	3. Charlie Dickson  Phone Number: 333333  Email: charlie.d@nus.edu.sg
-|| 	4. Dickson Ee  Phone Number: 444444  Email: dickson@nus.edu.sg
+|| 	4. Dickson Ee  Phone Number: +444444  Email: dickson@nus.edu.sg
 || 
 || 4 persons found!
 || ===================================================
@@ -164,9 +171,9 @@
 || ===================================================
 || Enter command: || [Command entered:  list]
 || 	1. Adam Brown  Phone Number: 111111  Email: adam@gmail.com
-|| 	2. Betsy Choo  Phone Number: 222222  Email: benchoo@nus.edu.sg
+|| 	2. Betsy Choo  Phone Number: +222222  Email: benchoo@nus.edu.sg
 || 	3. Charlie Dickson  Phone Number: 333333  Email: charlie.d@nus.edu.sg
-|| 	4. Dickson Ee  Phone Number: 444444  Email: dickson@nus.edu.sg
+|| 	4. Dickson Ee  Phone Number: +444444  Email: dickson@nus.edu.sg
 || 	5. Esther Potato  Phone Number: 555555  Email: esther@notreal.potato
 || 
 || 5 persons found!
@@ -188,18 +195,18 @@
 || 0 persons found!
 || ===================================================
 || Enter command: || [Command entered:  find Betsy]
-|| 	1. Betsy Choo  Phone Number: 222222  Email: benchoo@nus.edu.sg
+|| 	1. Betsy Choo  Phone Number: +222222  Email: benchoo@nus.edu.sg
 || 
 || 1 persons found!
 || ===================================================
 || Enter command: || [Command entered:  find Dickson]
 || 	1. Charlie Dickson  Phone Number: 333333  Email: charlie.d@nus.edu.sg
-|| 	2. Dickson Ee  Phone Number: 444444  Email: dickson@nus.edu.sg
+|| 	2. Dickson Ee  Phone Number: +444444  Email: dickson@nus.edu.sg
 || 
 || 2 persons found!
 || ===================================================
 || Enter command: || [Command entered:  find Charlie Betsy]
-|| 	1. Betsy Choo  Phone Number: 222222  Email: benchoo@nus.edu.sg
+|| 	1. Betsy Choo  Phone Number: +222222  Email: benchoo@nus.edu.sg
 || 	2. Charlie Dickson  Phone Number: 333333  Email: charlie.d@nus.edu.sg
 || 
 || 2 persons found!
@@ -243,8 +250,8 @@
 || ===================================================
 || Enter command: || [Command entered:  list]
 || 	1. Adam Brown  Phone Number: 111111  Email: adam@gmail.com
-|| 	2. Betsy Choo  Phone Number: 222222  Email: benchoo@nus.edu.sg
-|| 	3. Dickson Ee  Phone Number: 444444  Email: dickson@nus.edu.sg
+|| 	2. Betsy Choo  Phone Number: +222222  Email: benchoo@nus.edu.sg
+|| 	3. Dickson Ee  Phone Number: +444444  Email: dickson@nus.edu.sg
 || 	4. Esther Potato  Phone Number: 555555  Email: esther@notreal.potato
 || 
 || 4 persons found!
@@ -254,8 +261,8 @@
 || ===================================================
 || Enter command: || [Command entered:  list]
 || 	1. Adam Brown  Phone Number: 111111  Email: adam@gmail.com
-|| 	2. Betsy Choo  Phone Number: 222222  Email: benchoo@nus.edu.sg
-|| 	3. Dickson Ee  Phone Number: 444444  Email: dickson@nus.edu.sg
+|| 	2. Betsy Choo  Phone Number: +222222  Email: benchoo@nus.edu.sg
+|| 	3. Dickson Ee  Phone Number: +444444  Email: dickson@nus.edu.sg
 || 
 || 3 persons found!
 || ===================================================
@@ -263,8 +270,8 @@
 || Deleted Person: Adam Brown  Phone Number: 111111  Email: adam@gmail.com
 || ===================================================
 || Enter command: || [Command entered:  list]
-|| 	1. Betsy Choo  Phone Number: 222222  Email: benchoo@nus.edu.sg
-|| 	2. Dickson Ee  Phone Number: 444444  Email: dickson@nus.edu.sg
+|| 	1. Betsy Choo  Phone Number: +222222  Email: benchoo@nus.edu.sg
+|| 	2. Dickson Ee  Phone Number: +444444  Email: dickson@nus.edu.sg
 || 
 || 2 persons found!
 || ===================================================
